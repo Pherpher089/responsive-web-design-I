@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -85,6 +87,10 @@ button{
   border: 1px solid black;
 }
 
+hr {
+    
+}
+
 .container{
 	margin: 0 auto;
 	width: 700px;
@@ -133,12 +139,7 @@ button{
 	flex-direction: column;
 }
 
-.divider {
-	display: block;
-	height: 2px;
-	border: 1px solid black;
-	margin: 5px
-  }
+
 
 .contentTop{
 	display: flex;
@@ -150,6 +151,11 @@ button{
 	width: 300;
 	height: 150px;
 	
+}
+
+.middle-img{
+    width: 100%;
+  height: auto;
 }
 
 .contentBottom{
@@ -180,5 +186,82 @@ button{
 	background: lightgray;
 	border: 1px solid black;
 	
+}
+
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 500px){
+    .container{
+        width: 400px;
+    }
+    
+    .codeImg{
+        display: none;
+    }
+
+    .logo{
+        order: 0;
+    }
+
+    /*Navigation (500px)*/
+    .Navigation {
+        width: auto;
+        height: 500px;
+        
+        padding:0px 10px 0px 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navLinks{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navLinks hr{
+        align-self: center;
+        width: 500px;
+        margin-left: 150px;
+        margin-right: 150px;
+        size: 1px;
+    }
+
+    /*Page content (500px)*/
+
+    .contentTop{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .content1{
+        width: 300;
+        height: 100px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        
+    }
+
+    
+    
+    .contentBottom{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .content2{
+        width: 300;
+        height: 100px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
 }
 
