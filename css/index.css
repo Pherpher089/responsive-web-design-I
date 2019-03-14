@@ -116,6 +116,15 @@ hr {
     visibility: hidden;
  }
 
+ .services-header-img{
+     width: 100%;
+ }
+
+ .services-info-img{
+     padding-top: 25px;
+     width: 100%;
+ }
+
 .box{
 	width: auto;
 	height: auto;
@@ -214,14 +223,6 @@ hr {
         justify-content: space-around;
     }
 
-    .navLinks{
-
-    }
-/*
-    .links{
-        margin: 0px 40px 0 40px;
-    }
-*/
     .navLinks hr{
         visibility: hidden;
     }
@@ -311,6 +312,10 @@ hr {
         margin-top: 30px;
         margin-bottom: 20px;
         display: block;
+    }
+
+    .box{
+        width: 400;
     }
 }
 
