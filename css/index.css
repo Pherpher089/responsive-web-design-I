@@ -212,7 +212,7 @@ hr {
     }
 
     .Navigation {
-        width: 700;
+        width: 700px;
         height: 100px;
         
         padding:0px 10px 0px 10px;
@@ -254,16 +254,17 @@ hr {
     }
 
     .logo{
+        margin: 30px;
         order: 0;
     }
 
     /*Navigation (500px)*/
     .Navigation {
         width: auto;
-        height: 700px; 
+        height: auto; 
         padding:0px 10px 0px 10px;
         flex-direction: column-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
