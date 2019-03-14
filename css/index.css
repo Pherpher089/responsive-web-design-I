@@ -112,6 +112,10 @@ hr {
 	
 }
 
+.navLinks hr{
+    visibility: hidden;
+ }
+
 .box{
 	width: auto;
 	height: auto;
@@ -190,6 +194,53 @@ hr {
 
 @media(max-width: 800px){
 
+    .container{
+        width: 700px;
+    }
+    
+    .codeImg{
+        display: none;
+    }
+
+    .Navigation {
+        width: 700;
+        height: 100px;
+        
+        padding:0px 10px 0px 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navLinks{
+
+    }
+/*
+    .links{
+        margin: 0px 40px 0 40px;
+    }
+*/
+    .navLinks hr{
+        visibility: hidden;
+    }
+
+    .contentTop{
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .content1{
+        width: 150;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -208,16 +259,15 @@ hr {
     /*Navigation (500px)*/
     .Navigation {
         width: auto;
-        height: 500px;
-        
+        height: 700px; 
         padding:0px 10px 0px 10px;
-        display: flex;
         flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        align-items: center;
         justify-content: space-around;
+
     }
+
     .navLinks{
+        height: 400px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -225,8 +275,9 @@ hr {
     }
 
     .navLinks hr{
+        visibility: visible;
         align-self: center;
-        width: 500px;
+        width: 600px;
         margin-left: 150px;
         margin-right: 150px;
         size: 1px;
@@ -240,16 +291,14 @@ hr {
         flex-wrap: nowrap;
         justify-content: space-around;
     }
+
     .content1{
         width: 300;
         height: 100px;
         margin-top: 30px;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px;       
     }
 
-    
-    
     .contentBottom{
         display: flex;
         flex-direction: column;
